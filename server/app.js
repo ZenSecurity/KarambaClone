@@ -3,12 +3,22 @@ var express = require("express");
 var compression = require('compression');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
+var auth = require('http-auth');
 
 var PORT = Number(process.env.PORT) || 8080;
+var AUTH = 'secret';
+
+var basicAuth = auth.basic({ realm: "Karamba"}, function (username, password, callback) {
+        callback(username === AUTH && password === AUTH);
+    }
+);
+
 
 function run() {
     // Web config
     var app = express();
+    app.use(auth.connect(basicAuth)); // TODO: temporary
+
     var http = require('http').Server(app);
 
     // Set web options & middleware
@@ -19,7 +29,6 @@ function run() {
     app.use('/lib', express.static(path.join(appRoot, 'node_modules')));
 
     app.use(cookieParser());
-    app.use(express.basicAuth('testUser', 'testPass'));
 
     // Setup routes (order matters)
     //
