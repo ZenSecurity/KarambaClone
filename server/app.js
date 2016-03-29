@@ -25,7 +25,7 @@ function run() {
     app.disable('x-powered-by');
     app.use(compression());
 
-    app.use(express.static(path.join(appRoot, 'client')));
+    app.use(express.static(path.join(appRoot, 'client'), { extensions: ['html'] }));
     app.use('/lib', express.static(path.join(appRoot, 'node_modules')));
 
     app.use(cookieParser());

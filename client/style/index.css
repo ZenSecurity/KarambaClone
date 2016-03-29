@@ -52,6 +52,7 @@ ul.content > li {
 */
 a.menu-item {
     margin: 0;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
