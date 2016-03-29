@@ -3,18 +3,42 @@ body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-
 h1.hero {
     display: inline-block;
     width: 300px;
-    margin: 40px 0 0 90px;
+    margin: 40px 0 0 15px;
     font-size: 50px;
     font-weight: 400;
     color: #fff;
     text-shadow: 1px 1px #000;
 }
-
-
+p.small {
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+/*
+ Theme
+*/
+a.menu-item {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.menu-item.navbar {
+    color: #262262 !important;
+}
+a.menu-item.navbar:hover,
+a.menu-item.navbar.active {
+    color: #951b81 !important;
+}
+a.menu-item.footer {
+    color: #fff !important;
+    font-size: 14px;
+}
+a.menu-item.footer:hover,
+a.menu-item.footer.active {
+    color: #ccc !important;
+}
 /*
  Navbar
 */
@@ -22,36 +46,25 @@ h1.hero {
 .navbar {
     min-height: 100px;
 }
-
+.navbar-header {
+    margin-left: -75px !important;
+}
 .navbar-brand {
     height: 100px;
     padding-top: 20px;
 }
-
 .navbar-default {
     background: #fff;
     border-bottom: 12px solid #262262;
 }
-
 @media (min-width: 768px) {
 
 }
-
 @media (min-width: 768px) {
     .navbar-nav > li > a.menu-item {
         padding-top: 55px;
     }
 }
-.navbar-nav > li > a.menu-item {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #262262;
-}
-.navbar-nav > li > a.menu-item:hover,
-.navbar-nav > li > a.menu-item.active {
-    color: #951b81;
-}
-
 /*
  Hero
 */
@@ -59,15 +72,27 @@ h1.hero {
 .hero {
     min-height: 500px;
     padding: 0 !important;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
 .hero.home {
-    background-image:url('../images/hero-bg-home.jpg');
+    background-image: url('../images/hero-bg-home.jpg');
 }
-
 /*
  Sections
 */
+.col-1 > * {
+    margin-left: 15px;
+}
+
+.footer {
+    margin-bottom: 0;
+    background-color: #333;
+    color: #fff;
+}
+.footer-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+}
