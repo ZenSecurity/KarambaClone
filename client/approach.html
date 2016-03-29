@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="images/logo-figure-x65.png">
+    <title>Karamba - Automotive Security Done Right</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> or
+    <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.
+</p>
+<![endif]-->
+
+<!--=======================================
+ Navbar/Brand
+========================================-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-spied">
+    <div class="container">
+        <!--Header Link + Collapsed Menu button-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--Brand-->
+            <a href="/" class="navbar-brand">
+                <img alt="Brand" width="181" height="60" src="/images/logo-181x60.png">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <p class="navbar-text visible-xs-block">Menu</p>
+
+            <!--Menu-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/" class="menu-item navbar">Home</a></li>
+                <li><a href="/approach" class="menu-item navbar active">Out Approach</a></li>
+                <li><a href="/faq" class="menu-item navbar">FAQ</a></li>
+                <!--<li><a href="#about" class="menu-item navbar">About Us</a></li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--=======================================
+ Hero
+========================================-->
+
+<div class="jumbotron hero approach">
+    <div class="container">
+        <h1 class="hero">Our Approach</h1>
+    </div>
+</div>
+
+<!--=======================================
+ Sections
+========================================-->
+<div class="container">
+
+    <div class="section section-hero home">
+        <div class="row">
+            <div class="col-lg-12 col-1">
+                <h3>The Risks of the<br>
+                    Connected Cars</h3>
+                <p>Cars become ‘smarter’ and connected to the Internet through cellular wireless networks, Wi-Fi and Bluetooth. As cars become connected they also become vulnerable to cyber attacks.
+                    Modern vehicles have over 100 controllers, or Electronic Control Units (ECUs), that are responsible for running most functions of your car, from steering wheel, to engine, to braking system, and Airbags, to navigation systems. Like any other externally connected computers, ECUs in connected cars have become targets for hackers.<br>
+                    In recent months, we have seen the Cherokee Jeep, Toyota Prius, Tesla Model S, Nissan Leaf and other cars successful targeted by white hat attackers, who were able to get the vehicles they compromised to do almost anything, from turning on the radio and windshield wipers to killing the engine while the car drove on the freeway. In response to the Jeep hack, Chrysler recalled 1.4 million vehicles, taking a hit to their reputation and bottom line.
+                </p>
+
+                <h3>Karamba’s ECU Endpoint Security:<br>
+                    Dropper Detection and Malware Prevention</h3>
+
+                <h4>Car’s Cyber Attack Entry Points: Externally Connected ECUs</h4>
+                <p>When hackers attack the car, their way into the car must go through the car’s externally connected ECUs. While there are over a hundred of ECUs in a car, three main systems are open to external connections: telematics, on-board diagnostics (OBD), and infotainment controllers. These are the gates into the car’s Controllers Network (CAN bus). Detect and stop attackers at the gates, and you significantly reduce the risk of attacks penetrating into the Car’s network to disrupt its safe operations.</p>
+
+                <h4>Karamba-generated Factory Setting Policy</h4>
+                <p>Karamba’s technology enables ECU and system providers to define factory settings for each ECU. Factory settings include whitelisting of all permitted program binaries, processes, scripts, network behavior etc. This policy is embedded within the externally connected ECUs to ensure that only explicitly allowed code and behavior (based on factory setting) may run on them.</p>
+
+                <h4>Early Detection of Droppers</h4>
+                <h5 class="warn">Droppers vs. Malware</h5>
+                <p>When hackers hack into a system they first use a Dropper to implant a malware. Droppers are small codes or operations that their mission is to exploit vulnerabilities and implant malwares. Malware is the code that takes control of the car and may cause significant damage, including safety risks.</p>
+
+                <h5 class="warn">Early Detection</h5>
+                <p>Karamba identifies Droppers as abnormal behavior or operation. When such abnormality is detected, Karamba alerts on the attack attempt. It provides early warning for the car OEMs and for the system providers that is under attack. The detection includes source IP and attack path, enabling to block the attack source before it succeeds to implant a malware.</p>
+
+                <h3>Complete Malware<br>
+                    Prevention</h3>
+                <p>Droppers may succeed to drop a malware onto the externally connected ECU. When the malware – i.e. foreign code – is invoked on the ECU, Karamba detects it as foreign code and blocks it when it attempts to run. There are no exceptions: if it is not part of factory settings than it is not allowed to run.</p>
+
+                <h3>Benefits:</h3>
+                <ul class="content">
+                    <li>
+                        <b>Early warning</b> — alert on attack attempts before they materialize
+                    </li>
+                    <li>
+                        <b>Short Quality Check</b> — Karamba’s software is part of the ECU software. When embedding Karamba into a car, only the system that runs Karamba (e.g. the infotainment) should be checked if it performs according to its specifications. No need to test the entire car.
+                    </li>
+                    <li>
+                        <b>Preventative</b> — stopping attacks upon launch
+                    </li>
+                    <li>
+                        <b>No False Positives</b> — allowing only the code and applications that have explicit permission to run on the controller, creates no ambiguity. Either the code is part of factory setting or not, no false alarms.
+                    </li>
+                    <li>
+                        <b>No Updates</b> — providing security for the current version of the software in the car. The solution is embedded in the development cycles of the controller – when the controller is updated, Karamba is updated to reflect the new factory settings – regardless of changes in the threat landscape, the version of the controller in use in the car is protected.
+                    </li>
+                </ul>
+
+                <h3>Retrofit<br>
+                    Now</h3>
+                <p class="last-p">All recent attacks were performed on models, which are already on the road. As recently published by the FBI existing models of connected cars may be targets for cyber attacks. Karamba enables the car industry to protect existing car models against hackers. By adding Karamba to the software versions of the three types of externally connected ECUs, cars will be hardened almost hermitically against cyber risks and attack consequences. This could be done as part of the software updates delivered during annual car service checks.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--=======================================
+ Footer
+========================================-->
+
+<footer class="jumbotron footer">
+    <div class="container">
+        <div class="row">
+            <!--Col-1 - Links-->
+            <div class="col-md-4 footer-col col-1">
+                <ul class="list-unstyled footer-menu">
+                    <li><a href="/" class="menu-item footer">Home</a></li>
+                    <li><a href="/approach" class="menu-item footer active">Out Approach</a></li>
+                    <li><a href="/faq" class="menu-item footer">FAQ</a></li>
+                    <!--<li><a href="#about" class="menu-item footer">About Us</a></li>-->
+                </ul>
+            </div>
+            <!--Col-2 - Logo-->
+            <div class="col-md-4 footer-col">
+                <img class="footer-logo" src="/images/logo-153x50-bw.png" width="153" height="50" alt="Logo">
+            </div>
+            <!--Col-3 - Address-->
+            <div class="col-md-4 footer-col">
+                <p class="small">Address here, 17 something<br>Industrial zone Ra'anna 00234, Israel</p>
+                <p class="small">m: +972 50 313-5003<br>us: +1 408 391 5599</p>
+                <p class="small">info@karambasecurity.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Scripts-->
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
