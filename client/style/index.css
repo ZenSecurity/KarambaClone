@@ -1,7 +1,12 @@
 body {
-    padding-top: 110px;
+    padding-top: 72px;
     font-size: 16px;
     font-family: "Helvetica Neue", Arial, sans-serif;
+}
+@media (min-width: 768px) {
+    body {
+        padding-top: 110px;
+    }
 }
 /*
  Type
@@ -12,7 +17,7 @@ h1.hero {
     font-size: 50px;
     font-weight: 400;
     color: #fff;
-    text-shadow: 0 0 13px rgba(0,0,0, 0.7);
+    text-shadow: 0 0 13px rgba(0, 0, 0, 0.7);
 }
 h3 {
     font-size: 32px;
@@ -64,13 +69,12 @@ a.menu-item {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    min-height: 0;
 }
-a.menu-item.navbar {
+a.menu-item.nav-menu {
     color: #262262 !important;
 }
-a.menu-item.navbar:hover,
-a.menu-item.navbar.active {
+a.menu-item.nav-menu:hover,
+a.menu-item.nav-menu.active {
     color: #951b81 !important;
 }
 a.menu-item.footer {
@@ -99,29 +103,43 @@ a.menu-item.footer.active {
 .btn-normal:hover {
     color: #0083b9;
 }
-
-
 /*
  Navbar
 */
-
 .navbar {
-    min-height: 100px;
+    height: 72px;
 }
 .navbar-brand {
-    height: 100px;
-    padding-top: 20px;
+    height: 100%;
+    padding: 10px;
+}
+.brand-image {
+    height: 40px;
+}
+@media (min-width: 768px) {
+    .navbar {
+        height: 110px;
+    }
+    .navbar-brand {
+        padding: 19px;
+    }
+    .brand-image {
+        height: 60px;
+    }
 }
 .navbar-default {
     background: #fff;
     border-bottom: 12px solid #262262;
 }
+.navbar-collapse {
+    background: #fff;
+}
 .navbar-toggle {
-    padding: 25px;
-    margin: 25px 25px 25px 0;
+    padding: 20px;
+    margin: 10px 15px;
     border: 0;
-    background: url('/images/menu.svg');
-    background-size: 50px 50px ;
+    background: url('/images/menu.svg') no-repeat;
+    background-size: 40px 40px;
 }
 @media (min-width: 1300px) {
     .navbar-header {
@@ -133,7 +151,6 @@ a.menu-item.footer.active {
         padding-top: 55px;
     }
 }
-
 /*
  Hero
 */
@@ -181,7 +198,6 @@ a.menu-item.footer.active {
         margin-left: -25px;
     }
 }
-
 /*
  Elements
 */
@@ -207,7 +223,6 @@ video.movie {
         width: 900px;
     }
 }
-
 ul.blue li {
     color: #662d91;
 }
