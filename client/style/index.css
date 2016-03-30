@@ -188,7 +188,7 @@ video.movie {
 }
 @media (min-width: 768px) {
     video.movie {
-        width: 380px;
+        width: 370px;
     }
 }
 @media (min-width: 992px) {
