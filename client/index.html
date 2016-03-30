@@ -115,23 +115,32 @@
                         <p class="color-light contact-text">
                             Drop us a line below and we’ll help you out with more information about Karamba’s technology‏.
                         </p>
-                        <form class="contact-form">
+                        <form class="contact-form" id="contact-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Full name*">
+                                <input type="text" name="name" class="form-control" placeholder="Full name*"
+                                    data-required="true">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email*">
+                                <input type="email" name="email" class="form-control" placeholder="Email*"
+                                    data-required="true"
+                                    data-email="true">
                             </div>
                             <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Phone number">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone number">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Company name*">
+                                <input type="text" name="company" class="form-control" placeholder="Company name*"
+                                    data-required="true">
                             </div>
                             <div class="form-group space-bottom">
-                                <textarea class="form-control" rows="4" placeholder="Message*"></textarea>
+                                <textarea class="form-control" name="message" rows="4" placeholder="Message*"
+                                    data-required="true"></textarea>
                             </div>
-                            <a class="btn btn-normal last-p pull-right" href="/">Send</a>
+                            <a class="btn btn-normal last-p pull-right js-submit" href>Send</a>
+                            <div class="send-progress alt-color">
+                                <span class="sending">Sending...</span>
+                                <span class="sent">Thank you!</span>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -176,6 +185,7 @@
 <!--Scripts-->
 <script src="/lib/jquery/dist/jquery.min.js"></script>
 <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
 
 </body>
 </html>
