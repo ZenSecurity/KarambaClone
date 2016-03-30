@@ -205,6 +205,10 @@ video.movie {
 ul.blue li {
     color: #662d91;
 }
+figure img {
+    width: 200px;
+    height: 250px
+}
 figure.founder {
     max-width: 200px;
     margin: 0 auto 120px auto;
