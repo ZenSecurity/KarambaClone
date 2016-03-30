@@ -1,6 +1,27 @@
 $(function () {
 
-   /*-----------------------------------------------
+    /*-----------------------------------------------
+     Play Video (Android issue)
+     -------------------------------------------------*/
+
+    // Android disabled autoplay in all players:
+    // https://bugs.chromium.org/p/chromium/issues/detail?id=159336
+
+    var myVideo = $('#introMovie')[0];
+    var isPlaying = false;
+    if (myVideo) {
+        myVideo.load();
+        myVideo.play();
+        myVideo.addEventListener('canplay', function () {
+            myVideo.play();
+        }, false);
+        myVideo.addEventListener('click', function () {
+            myVideo[isPlaying ? 'pause' : 'play']();
+            isPlaying = !isPlaying;
+        }, false);
+    }
+
+    /*-----------------------------------------------
      Contact - Send Email
      -------------------------------------------------*/
 
@@ -89,7 +110,7 @@ $(function () {
                 //console.log('>> Response: ', res);
                 cb(null, res)
             },
-            error: function (jqXHR, textStatus, errorThrown ) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 var err = {
                     status: textStatus,
                     httpStatus: errorThrown,
