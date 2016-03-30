@@ -32,7 +32,7 @@ function run() {
 
     // Setup routes (order matters)
     //
-    //require(appRoot + '/app/web/api-validate')(app).setupRoutes();
+    require(appRoot + '/server/web/api-public')(app).setupRoutes();
 
     // Listen port
     //
