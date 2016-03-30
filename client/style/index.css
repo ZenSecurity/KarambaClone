@@ -12,6 +12,7 @@ h1.hero {
     font-size: 50px;
     font-weight: 400;
     color: #fff;
+    text-shadow: 0 0 13px rgba(0,0,0, 0.7);
 }
 h3 {
     font-size: 32px;
@@ -46,8 +47,13 @@ ul.content {
 ul.content > li {
     margin-bottom: 20px;
 }
-ul.content.narrow > li {
+ul.content.standout {
+    margin-bottom: 20px;
+}
+ul.content.standout > li {
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.7;
 }
 /*
  Theme
@@ -216,7 +222,8 @@ figure.founder {
 .btn {
     border: 2px solid;
     border-radius: 10px;
-    padding: 4px 10px;
+    padding: 7px 35px;
+    font-size: 18px;
 }
 .btn:hover {
     text-decoration: none;
