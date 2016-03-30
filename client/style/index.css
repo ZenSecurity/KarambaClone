@@ -31,10 +31,9 @@ h4 {
 h5 {
     margin: 15px 0 10px;
 }
-h4, h5, p, ul, ol {
+h4, h5, p, ul, ol, .p {
     font-size: 17px;
     font-weight: lighter;
-    color: #707070;
 }
 h4, h5 {
     font-weight: bolder;
@@ -63,6 +62,9 @@ ul.content.standout > li {
 /*
  Theme
 */
+p, ul, ol {
+    color: #707070;
+}
 a.menu-item {
     margin: 0;
     font-size: 16px;
@@ -88,19 +90,29 @@ a.menu-item.footer.active {
 .warn-color {
     color: #92278f;
 }
-.text-color {
+.alt-color {
+    color: #00aeef;
+}
+.color-text {
     color: #707070;
+}
+.color-light {
+    color: #fff;
 }
 .btn-warn {
     color: #ec008c;
 }
-.btn-warn:hover {
+.btn-warn:hover,
+.btn-warn:active,
+.btn-warn.active{
     color: #b90067;
 }
 .btn-normal {
     color: #00aeef;
 }
-.btn-normal:hover {
+.btn-normal:hover,
+.btn-normal:active,
+.btn-normal.active{
     color: #0083b9;
 }
 /*
@@ -174,12 +186,33 @@ a.menu-item.footer.active {
 .hero.about {
     background-image: url('../images/hero-bg-about.jpg');
 }
+.hero.contact {
+    background: #262262;
+    margin-bottom: 0;
+}
 /*
  Sections
 */
 .col-1 > * {
     margin-left: 15px;
 }
+.space-bottom {
+    margin-bottom: 20px;
+}
+.limit-w {
+    margin: 0 30px;
+}
+@media (min-width: 768px) {
+    .limit-w {
+        max-width: 330px;
+        margin: 0;
+    }
+}
+/* Contact us */
+.section-contact .contact-text {
+    font-size: 17px;
+}
+/* Footer */
 .footer {
     margin-bottom: 0;
     background-color: #333;
@@ -242,4 +275,14 @@ figure.founder {
 }
 .btn:hover {
     text-decoration: none;
+}
+.form-control:focus::-moz-placeholder {
+    color: #272264;
+    opacity: 1;
+}
+.form-control:focus:-ms-input-placeholder {
+    color: #272264;
+}
+.form-control:focus::-webkit-input-placeholder {
+    color: #272264;
 }
