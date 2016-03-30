@@ -26,25 +26,19 @@ h5 {
     margin: 15px 0 10px;
 }
 h4, h5, p, ul, ol {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
     color: #707070;
 }
 h4, h5 {
     font-weight: bolder;
 }
-.warn-color {
-    color: #92278f;
-}
-.text-color {
-    color: #707070;
-}
 .last-p {
     margin-bottom: 120px;
 }
 p.small {
     font-size: 16px;
-    margin: 0 0 6px;
+    margin: 0 0 6px 15px;
 }
 ul.content {
     padding-left: 20px;
@@ -64,6 +58,7 @@ a.menu-item {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    min-height: 0;
 }
 a.menu-item.navbar {
     color: #262262 !important;
@@ -80,15 +75,32 @@ a.menu-item.footer:hover,
 a.menu-item.footer.active {
     color: #ccc !important;
 }
+.warn-color {
+    color: #92278f;
+}
+.text-color {
+    color: #707070;
+}
+.btn-warn {
+    color: #ec008c;
+}
+.btn-warn:hover {
+    color: #b90067;
+}
+.btn-normal {
+    color: #00aeef;
+}
+.btn-normal:hover {
+    color: #0083b9;
+}
+
+
 /*
  Navbar
 */
 
 .navbar {
     min-height: 100px;
-}
-.navbar-header {
-    margin-left: -75px !important;
 }
 .navbar-brand {
     height: 100px;
@@ -98,14 +110,24 @@ a.menu-item.footer.active {
     background: #fff;
     border-bottom: 12px solid #262262;
 }
-@media (min-width: 768px) {
-
+.navbar-toggle {
+    padding: 25px;
+    margin: 25px 25px 25px 0;
+    border: 0;
+    background: url('/images/menu.svg');
+    background-size: 50px 50px ;
+}
+@media (min-width: 1300px) {
+    .navbar-header {
+        margin-left: -75px !important;
+    }
 }
 @media (min-width: 768px) {
     .navbar-nav > li > a.menu-item {
         padding-top: 55px;
     }
 }
+
 /*
  Hero
 */
@@ -143,22 +165,55 @@ a.menu-item.footer.active {
 .footer p.small {
     color: #fff;
 }
-.footer-logo {
-    position: absolute;
-    left: 50%;
-    margin-left: -25px;
+.footer-col {
+    margin-bottom: 50px;
 }
+@media (min-width: 992px) {
+    .footer-logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+    }
+}
+
 /*
  Elements
 */
-video.movie {
-    width: 900px;
-    height: 850px;
+.movie-container {
+    text-align: center;
 }
+video.movie {
+    width: 320px;
+    float: none !important;
+}
+@media (min-width: 768px) {
+    video.movie {
+        width: 380px;
+    }
+}
+@media (min-width: 992px) {
+    video.movie {
+        width: 720px;
+    }
+}
+@media (min-width: 1200px) {
+    video.movie {
+        width: 900px;
+    }
+}
+
 ul.blue li {
     color: #662d91;
 }
 figure.founder {
     max-width: 200px;
-    margin-bottom: 120px;
+    margin: 0 auto 120px auto;
+}
+.btn {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+.btn:hover {
+    text-decoration: none;
 }
