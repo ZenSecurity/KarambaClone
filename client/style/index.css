@@ -3,7 +3,6 @@ body {
     font-size: 16px;
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
 /*
  Type
 */
@@ -136,7 +135,6 @@ a.menu-item.footer.active {
 .col-1 > * {
     margin-left: 15px;
 }
-
 .footer {
     margin-bottom: 0;
     background-color: #333;
@@ -150,7 +148,6 @@ a.menu-item.footer.active {
     left: 50%;
     margin-left: -25px;
 }
-
 /*
  Elements
 */
@@ -158,7 +155,10 @@ video.movie {
     width: 900px;
     height: 850px;
 }
-
 ul.blue li {
     color: #662d91;
+}
+figure.founder {
+    max-width: 200px;
+    margin-bottom: 120px;
 }
