@@ -1,7 +1,7 @@
 body {
     padding-top: 110px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 /*
@@ -9,15 +9,14 @@ body {
 */
 h1.hero {
     display: inline-block;
-    width: 300px;
     margin: 40px 0 0 15px;
     font-size: 50px;
     font-weight: 400;
     color: #fff;
-    text-shadow: 1px 1px #000;
 }
 h3 {
     font-size: 32px;
+    font-weight: normal;
     margin: 40px 0 25px;
     color: #662d91;
 }
@@ -27,15 +26,22 @@ h4 {
 h5 {
     margin: 15px 0 10px;
 }
-p, h4, h5, ul, ol {
+h4, h5, p, ul, ol {
     font-size: 18px;
+    font-weight: lighter;
     color: #707070;
 }
-.warn {
+h4, h5 {
+    font-weight: bolder;
+}
+.warn-color {
     color: #92278f;
 }
+.text-color {
+    color: #707070;
+}
 .last-p {
-    margin-bottom: 40px;
+    margin-bottom: 120px;
 }
 p.small {
     font-size: 16px;
@@ -118,6 +124,12 @@ a.menu-item.footer.active {
 .hero.approach {
     background-image: url('../images/hero-bg-approach.jpg');
 }
+.hero.faq {
+    background-image: url('../images/hero-bg-faq.jpg');
+}
+.hero.about {
+    background-image: url('../images/hero-bg-about.jpg');
+}
 /*
  Sections
 */
@@ -137,4 +149,16 @@ a.menu-item.footer.active {
     position: absolute;
     left: 50%;
     margin-left: -25px;
+}
+
+/*
+ Elements
+*/
+video.movie {
+    width: 900px;
+    height: 850px;
+}
+
+ul.blue li {
+    color: #662d91;
 }
