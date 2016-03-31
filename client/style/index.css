@@ -1,7 +1,27 @@
+@font-face {
+    font-family: 'HelveticaNeue-Lite';
+    src: url('/fonts/helvetica-neue/30C2B1_0_0.eot');
+    src: url('/fonts/helvetica-neue/30C2B1_0_0.eot?#iefix') format('embedded-opentype'), url('/fonts/helvetica-neue/30C2B1_0_0.woff2') format('woff2'), url('/fonts/helvetica-neue/30C2B1_0_0.woff') format('woff'), url('/fonts/helvetica-neue/30C2B1_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('/fonts/helvetica-neue/30C2B1_1_0.eot');
+    src: url('/fonts/helvetica-neue/30C2B1_1_0.eot?#iefix') format('embedded-opentype'), url('/fonts/helvetica-neue/30C2B1_1_0.woff2') format('woff2'), url('/fonts/helvetica-neue/30C2B1_1_0.woff') format('woff'), url('/fonts/helvetica-neue/30C2B1_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Roman';
+    src: url('/fonts/helvetica-neue/30C2B1_2_0.eot');
+    src: url('/fonts/helvetica-neue/30C2B1_2_0.eot?#iefix') format('embedded-opentype'), url('/fonts/helvetica-neue/30C2B1_2_0.woff2') format('woff2'), url('/fonts/helvetica-neue/30C2B1_2_0.woff') format('woff'), url('/fonts/helvetica-neue/30C2B1_2_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Middle';
+    src: url('/fonts/helvetica-neue/30C2B1_3_0.eot');
+    src: url('/fonts/helvetica-neue/30C2B1_3_0.eot?#iefix') format('embedded-opentype'), url('/fonts/helvetica-neue/30C2B1_3_0.woff2') format('woff2'), url('/fonts/helvetica-neue/30C2B1_3_0.woff') format('woff'), url('/fonts/helvetica-neue/30C2B1_3_0.ttf') format('truetype');
+}
 body {
     padding-top: 72px;
     font-size: 16px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: 'HelveticaNeue-Roman', sans-serif;
 }
 @media (min-width: 768px) {
     body {
@@ -12,32 +32,32 @@ body {
  Type
 */
 h1.hero {
+    font-family: 'HelveticaNeue-Bold';
     display: inline-block;
     margin: 40px 0 0 15px;
     font-size: 50px;
-    font-weight: 400;
     color: #fff;
     text-shadow: 0 0 13px rgba(0, 0, 0, 0.7);
 }
 h3 {
+    font-family: 'HelveticaNeue-Middle';
     font-size: 32px;
-    font-weight: normal;
     margin: 40px 0 25px;
     color: #662d91;
 }
+h4, h5, p, ul, ol, .p {
+    font-family: 'HelveticaNeue-Lite';
+    font-size: 17px;
+}
 h4 {
+    font-family: 'HelveticaNeue-Middle';
     margin: 30px 0 10px;
 }
 h5 {
+    font-family: 'HelveticaNeue-Roman';
     margin: 15px 0 10px;
 }
-h4, h5, p, ul, ol, .p {
-    font-size: 17px;
-    font-weight: 300;
-}
-h4, h5 {
-    font-weight: bolder;
-}
+
 .last-p {
     margin-bottom: 120px;
 }
@@ -66,9 +86,9 @@ p, ul, ol {
     color: #000;
 }
 a.menu-item {
+    font-family: 'HelveticaNeue-Middle';
     margin: 0;
     font-size: 16px;
-    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -107,7 +127,7 @@ a.menu-item.footer.active {
 }
 .btn-warn:hover,
 .btn-warn:active,
-.btn-warn.active{
+.btn-warn.active {
     color: #b90067;
 }
 .btn-normal {
@@ -115,7 +135,7 @@ a.menu-item.footer.active {
 }
 .btn-normal:hover,
 .btn-normal:active,
-.btn-normal.active{
+.btn-normal.active {
     color: #0083b9;
 }
 /*
@@ -182,16 +202,16 @@ a.menu-item.footer.active {
     background-position: center;
 }
 .hero.home {
-    background-image: url('../images/hero-bg-home.jpg');
+    background-image: url('/images/hero-bg-home.jpg');
 }
 .hero.approach {
-    background-image: url('../images/hero-bg-approach.jpg');
+    background-image: url('/images/hero-bg-approach.jpg');
 }
 .hero.faq {
-    background-image: url('../images/hero-bg-faq.jpg');
+    background-image: url('/images/hero-bg-faq.jpg');
 }
 .hero.about {
-    background-image: url('../images/hero-bg-about.jpg');
+    background-image: url('/images/hero-bg-about.jpg');
 }
 .hero.contact {
     background: #262262;
@@ -285,16 +305,15 @@ figure.founder {
 }
 .form-control:focus {
     border-color: #00aeef;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 0 2px #00aeef;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 0 2px #00aeef;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 0 2px #00aeef;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 0 2px #00aeef;
 }
 .has-error .form-control,
 .has-error .form-control:focus {
     border-color: #ec008c;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 0 2px #ec008c;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 0 2px #ec008c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 0 2px #ec008c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 0 2px #ec008c;
 }
-
 /*
  Form
 */
