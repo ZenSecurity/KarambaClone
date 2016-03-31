@@ -33,7 +33,7 @@ h5 {
 }
 h4, h5, p, ul, ol, .p {
     font-size: 17px;
-    font-weight: lighter;
+    font-weight: 300;
 }
 h4, h5 {
     font-weight: bolder;
