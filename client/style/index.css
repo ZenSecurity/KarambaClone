@@ -85,6 +85,10 @@ ul.content.standout > li {
 p, ul, ol {
     color: #000;
 }
+a.no-style {
+    text-decoration: none;
+    color: inherit;
+}
 a.menu-item {
     font-family: 'HelveticaNeue-Middle';
     margin: 0;
@@ -358,4 +362,21 @@ figure.founder .img-cont {
 }
 .send-progress.sending span.sending {
     display: inline;
+}
+/*
+Accordion
+*/
+a .chevron {
+    content: '';
+    display: inline-block;
+    width: 0; height: 0;
+    margin-bottom: 4px;
+    border: 6px solid transparent;
+    border-left: 6px solid #662d91;
+    border-right: 0;
+    transition: transform .3s ease;
+    transform: rotate(90deg);
+}
+a.collapsed .chevron {
+    transform: rotate(0deg);
 }
