@@ -7,7 +7,7 @@ $(function () {
     // Android disabled autoplay in all players:
     // https://bugs.chromium.org/p/chromium/issues/detail?id=159336
 
-    var video = $('#introMovie')[0];
+    /*var video = $('#introMovie')[0];
     if (video) {
         video.load();
         video.play();
@@ -17,7 +17,7 @@ $(function () {
         video.addEventListener('click', function () {
             video[video.paused ? 'play' : 'pause']();
         }, false);
-    }
+    }*/
 
     /*-----------------------------------------------
      Contact - Send Email
