@@ -67,19 +67,21 @@
     <div class="section section-hero home">
         <div class="row">
             <div class="col-sm-4 col-md-3 col-1">
-                <h3>Karmaba’s<br>
-                    Benefits</h3>
-                <ul class="content standout">
-                    <li class="warn-color">Detect Droppers</li>
-                    <li class="warn-color">Prevent malware</li>
-                    <li class="warn-color">Zero false positives</li>
-                    <li class="warn-color">No updates</li>
-                    <li class="warn-color">Retrofit now</li>
-                </ul>
-                <a class="btn btn-warn last-p" href="/approach">Learn more</a>
+                <div class="center-xs">
+                    <h3>Karmaba’s<br>
+                        Benefits</h3>
+                    <ul class="content standout text-left">
+                        <li class="warn-color">Detect Droppers</li>
+                        <li class="warn-color">Prevent malware</li>
+                        <li class="warn-color">Zero false positives</li>
+                        <li class="warn-color">No updates</li>
+                        <li class="warn-color">Retrofit now</li>
+                    </ul>
+                    <a class="btn btn-warn last-p" href="/approach">Learn more</a>
+                </div>
             </div>
-            <div class="col-sm-8 col-md-9">
-                <video id="introMovie" class="movie" poster="/video/karamba-movie-poster.jpg" autoplay loop>
+            <div class="col-sm-8 col-md-9 movie-cont">
+                <video id="introMovie" class="movie" poster="/video/karamba-movie-poster.jpg" autoplay>
                     <source src="/video/karamba-movie.mp4" type="video/mp4">
                     Your browser doesn’t support HTML5 video.
                 </video>
@@ -133,8 +135,7 @@
                                     data-required="true">
                             </div>
                             <div class="form-group space-bottom">
-                                <textarea class="form-control" name="message" rows="4" placeholder="Message*"
-                                    data-required="true"></textarea>
+                                <textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
                             </div>
                             <a class="btn btn-normal last-p pull-right js-submit" href>Send</a>
                             <div class="send-progress alt-color">
