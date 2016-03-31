@@ -235,7 +235,7 @@ a.menu-item.footer.active {
 .space-bottom {
     margin-bottom: 20px;
 }
-.space-bottom-lg {
+.space-bottom-md {
     margin-bottom: 70px;
 }
 .limit-w {
@@ -291,14 +291,14 @@ a.menu-item.footer.active {
  Elements
 */
 .movie-cont {
-    text-align: center;
+    padding: 30px;
 }
 video.movie {
-    width: 85%;
-    margin-top: 40px;
+    width: 100% !important;
+    height: auto !important;
 }
 @media (min-width: 1200px) {
-    video.movie {
+    .movie-cont {
         width: 750px;
         float: right !important;
     }
