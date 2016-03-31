@@ -7,17 +7,15 @@ $(function () {
     // Android disabled autoplay in all players:
     // https://bugs.chromium.org/p/chromium/issues/detail?id=159336
 
-    var myVideo = $('#introMovie')[0];
-    var isPlaying = false;
-    if (myVideo) {
-        myVideo.load();
-        myVideo.play();
-        myVideo.addEventListener('canplay', function () {
-            myVideo.play();
+    var video = $('#introMovie')[0];
+    if (video) {
+        video.load();
+        video.play();
+        video.addEventListener('canplay', function () {
+            video.play();
         }, false);
-        myVideo.addEventListener('click', function () {
-            myVideo[isPlaying ? 'pause' : 'play']();
-            isPlaying = !isPlaying;
+        video.addEventListener('click', function () {
+            video[video.paused ? 'play' : 'pause']();
         }, false);
     }
 

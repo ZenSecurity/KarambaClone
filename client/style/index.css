@@ -77,7 +77,7 @@ a.menu-item.nav-menu {
 }
 a.menu-item.nav-menu:hover,
 a.menu-item.nav-menu.active {
-    color: #951b81 !important;
+    color: #ec008c !important;
 }
 a.menu-item.footer {
     color: #fff !important;
@@ -156,6 +156,10 @@ a.menu-item.footer.active {
     background: url('/images/menu.svg') no-repeat;
     background-size: 40px 40px;
 }
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
 @media (min-width: 1300px) {
     .navbar-header {
         margin-left: -75px !important;
@@ -192,6 +196,9 @@ a.menu-item.footer.active {
 .hero.contact {
     background: #262262;
     margin-bottom: 0;
+}
+.hero.contact > .container {
+    padding-top: 30px;
 }
 /*
  Sections
@@ -237,26 +244,13 @@ a.menu-item.footer.active {
 /*
  Elements
 */
-.movie-container {
-    text-align: center;
-}
 video.movie {
-    width: 320px;
-    float: none !important;
-}
-@media (min-width: 768px) {
-    video.movie {
-        width: 370px;
-    }
-}
-@media (min-width: 992px) {
-    video.movie {
-        width: 720px;
-    }
+    width: 100%;
 }
 @media (min-width: 1200px) {
     video.movie {
         width: 900px;
+        float: right !important;
     }
 }
 ul.blue li {
