@@ -232,6 +232,9 @@ a.menu-item.footer.active {
 .col-1 > * {
     margin-left: 15px;
 }
+.space-top-sm {
+    padding-top: 30px;
+}
 .space-bottom {
     margin-bottom: 20px;
 }
