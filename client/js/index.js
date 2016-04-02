@@ -7,17 +7,26 @@ $(function () {
     // Android disabled autoplay in all players:
     // https://bugs.chromium.org/p/chromium/issues/detail?id=159336
 
-    /*var video = $('#introMovie')[0];
+    var PAUSE_TIME = 15.5;
+    var pausedOnce = false;
+    var video = $('#introMovie')[0];
     if (video) {
-        video.load();
-        video.play();
+        //video.load();
+        //video.play();
         video.addEventListener('canplay', function () {
             video.play();
         }, false);
         video.addEventListener('click', function () {
             video[video.paused ? 'play' : 'pause']();
         }, false);
-    }*/
+        video.addEventListener('timeupdate', function () {
+            //console.log('>> timeupdate', video.currentTime);
+            if (video.currentTime >= PAUSE_TIME && !pausedOnce) {
+                pausedOnce = true;
+                video.pause();
+            }
+        }, false);
+    }
 
     /*-----------------------------------------------
      Contact - Send Email
