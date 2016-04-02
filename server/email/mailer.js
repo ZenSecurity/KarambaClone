@@ -4,8 +4,8 @@ var templates = require(__dirname + '/templates/templates.js');
 
 var config = {
     auth: {
-        api_user: process.env.MAIL_USER,
-        api_key: process.env.MAIL_KEY
+        api_user: process.env.SENDGRID_USER,
+        api_key: process.env.SENDGRID_KEY
     }
 };
 var enabled = config.auth.api_user && config.auth.api_key;
