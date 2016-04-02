@@ -105,7 +105,6 @@ $(function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (res) {
-                //console.log('>> Response: ', res);
                 cb(null, res)
             },
             error: function (jqXHR, textStatus, errorThrown) {
