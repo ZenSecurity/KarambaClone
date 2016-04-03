@@ -69,62 +69,59 @@
             <div class="col-lg-12 col-1">
                 <h3>The Risks of the<br>
                     Connected Cars</h3>
-                <p>Cars become ‘smarter’ and connected to the Internet through cellular wireless networks, Wi-Fi and Bluetooth. As cars become connected they also become vulnerable to cyber attacks.
-                    Modern vehicles have over 100 controllers, or Electronic Control Units (ECUs), that are responsible for running most functions of your car, from steering wheel, to engine, to braking system, and Airbags, to navigation systems. Like any other externally connected computers, ECUs in connected cars have become targets for hackers.</p>
-                <p>In recent months, we have seen the Jeep Cherokee, Toyota Prius, Tesla Model S, Nissan Leaf and other cars successfully targeted by white hat attackers, who were able to get the vehicles they compromised to do almost anything, from turning on the radio and windshield wipers to killing the engine while the car drove on the freeway. In response to the Jeep hack, Chrysler recalled 1.4 million vehicles, taking a hit to their reputation and bottom line.</p>
+                <p>As cars become ‘smarter’ and connect to the Internet through cellular wireless networks, Wi-Fi and Bluetooth, they also become vulnerable to cyber attacks. Modern vehicles have over 100 controllers, or Electronic Control Units (ECUs) that are responsible for running most of the car’s functions, such as the steering wheel, engine, braking system, airbags, and navigation systems. Like any other externally connected computers, ECUs in connected cars have become targets for hackers.</p>
+                
+                <h4>A Hacker’s Way into the Car: Externally Connected ECUs</h4>
+                <p>To pull off a successful attack, hackers first need to find a way into the car’s Controller Area Network (CAN Bus). While there are over a hundred ECUs connected to the CAN Bus, only a few are open externally.</p>
+                <p>These external ECUs are the gates into the car. Detect and stop attackers at these gates, and the risk of attacks penetrating the car’s network, to disrupt its safe operations, is significantly reduced.</p>
 
                 <h3>Karamba’s ECU Endpoint Security:<br>
                     Dropper Detection and Malware Prevention</h3>
 
-                <h4>Car’s Cyber Attack Entry Points: Externally Connected ECUs</h4>
-                <p>When hackers attack the car, their way into the car must go through the car’s externally connected ECUs. While there are over a hundred of ECUs in a car, three main systems are open to external connections: telematics, on-board diagnostics (OBD), and infotainment controllers. These are the gates into the car’s Controllers Network (CAN bus). Detect and stop attackers at the gates, and you significantly reduce the risk of attacks penetrating into the Car’s network to disrupt its safe operations.</p>
-
-                <h4>Karamba-generated Factory Setting Policy</h4>
-                <p>Karamba’s technology enables ECU and system providers to define factory settings for each ECU. Factory settings include whitelisting of all permitted program binaries, processes, scripts, network behavior etc. This policy is embedded within the externally connected ECUs to ensure that only explicitly allowed code and behavior (based on factory setting) may run on them.</p>
+                <h4>Karamba-generated Factory Settings Policy</h4>
+                <p>Karamba’s unique endpoint security protects externally connected ECUs from attacks. Karamba enables ECU and system providers to define factory settings for each ECU, generating a policy that creates whitelists of all ECU’s permitted program binaries, processes, scripts, network behavior, etc. This policy is embedded within the externally connected ECU to ensure only explicitly allowed code and behavior may run on it.</p>
 
                 <h4>Early Detection of Droppers</h4>
-                <h5 class="warn-color">Droppers vs. Malware</h5>
-                <p>When hackers hack into a system they first use a Dropper to implant a malware. Droppers are small codes or operations that their mission is to exploit vulnerabilities and implant malwares. Malware is the code that takes control of the car and may cause significant damage, including safety risks.</p>
+                <p>Karamba identifies any attacks that attempt to download and run on the ECU.  Typically, when hackers target a system, they will use a ‘Dropper’, which is a small piece of code or operation, to try to exploit a vulnerability and implant malware. The malware is the code that ultimately tampers with or takes control of the function of the car, which can cause significant damage and put the safety of the driver and others on the road at risk.</p>
+                <p>Karamba detects the unexpected behavior or operation of a Dropper and immediately alerts on the attack attempt. The early warning gives the car’s original equipment manufacturers (OEMs) and system providers time to address the threat. Karamba’s alert includes the complete trail of the attack on the ECU, including its source and path, so vulnerabilities can be fixed and blocked to prevent any malware from infiltrating the CAN Bus.</p>
 
-                <h5 class="warn-color">Early Detection</h5>
-                <p>Karamba identifies Droppers as abnormal behavior or operation. When such abnormality is detected, Karamba alerts on the attack attempt. It provides early warning for the car OEMs and for the system providers that is under attack. The detection includes source IP and attack path, enabling to block the attack source before it succeeds to implant a malware.</p>
-
-                <h3>Complete Malware<br>
-                    Prevention</h3>
-                <p>Droppers may succeed to drop a malware onto the externally connected ECU. When the malware – i.e. foreign code – is invoked on the ECU, Karamba detects it as foreign code and blocks it when it attempts to run. There are no exceptions: if it is not part of factory settings than it is not allowed to run.</p>
+                <h4>Malware Prevention</h4>
+                <p>The moment a Dropper attempts to introduce malware on an externally connected ECU, Karamba will detect it as foreign code and block it when it attempts to run. If it’s not part of the factory settings, it is not allowed to run; if it’s not allowed to run, it can’t do anything to disrupt the car’s safe operations.</p>
 
                 <h3>Benefits:</h3>
+                <p>Karamba’s endpoint ECU security:</p>
                 <ul class="content blue">
                     <li>
                         <span class="color-text">
-                            <b>Early warning</b> — alert on attack attempts before they materialize
+                            <b>Provides an Early Warning of Threats</b> — alerting on any attack attempts (Droppers), so they can be addressed before they can materialize.
                         </span>
                     </li>
                     <li>
                         <span class="color-text">
-                            <b>Short Quality Check</b> — Karamba’s software is part of the ECU software. When embedding Karamba into a car, only the system that runs Karamba (e.g. the infotainment) should be checked if it performs according to its specifications. No need to test the entire car.
+                            <b>Stops Attacks at the Gate</b> — preventing attacks from making it into the car.
                         </span>
                     </li>
                     <li>
                         <span class="color-text">
-                            <b>Preventative</b> — stopping attacks upon launch
+                            <b>Generates No False Positives</b> — allowing only the code and applications that have explicit permission to run on the controller. This creates no ambiguity - either the code is part of the factory settings or not.
                         </span>
                     </li>
                     <li>
                         <span class="color-text">
-                            <b>No False Positives</b> — allowing only the code and applications that have explicit permission to run on the controller, creates no ambiguity. Either the code is part of factory setting or not, no false alarms.
+                            <b>No Updates</b> — always providing security for the current version of the software in the car. The solution is embedded in the development cycles of the controller; only when the controller is updated, Karamba is updated to reflect the new factory settings.  Regardless of changes in the threat landscape, the version of the ECU in use in the car is protected.
                         </span>
                     </li>
                     <li>
                         <span class="color-text">
-                            <b>No Updates</b> — providing security for the current version of the software in the car. The solution is embedded in the development cycles of the controller – when the controller is updated, Karamba is updated to reflect the new factory settings – regardless of changes in the threat landscape, the version of the controller in use in the car is protected.
+                            <b>Requires Only a Short Quality Check</b> — Karamba’s software is part of the ECU software. When embedding Karamba into a car, only the system that runs Karamba (e.g. the infotainment) should be checked if it performs according to its specifications. No need to test the entire car.
                         </span>
                     </li>
                 </ul>
 
                 <h3>Retrofit<br>
                     Now</h3>
-                <p class="last-p">All recent attacks were performed on models, which are already on the road. As recently published by the FBI existing models of connected cars may be targets for cyber attacks. Karamba enables the car industry to protect existing car models against hackers. By adding Karamba to the software versions of the three types of externally connected ECUs, cars will be hardened almost hermetically against cyber risks and attack consequences. This could be done as part of the software updates delivered during annual car service checks.</p>
+                <p>All recent attacks were performed on models that are already on the road. <a href="http://www.ic3.gov/media/2016/160317.aspx">The Federal Bureau of Investigation (FBI) and U.S. National Highway Traffic Safety Administration (NHTSA) issued a public safety announcement</a>, warning that automobiles are increasingly vulnerable to exploits from cyber attackers.</p>
+                <p class="last-p">By adding Karamba to the software versions of externally connected ECUs, the car industry can protect existing models against hackers. Karamba can be added as part of the regular software updates that drivers receive during regular maintenance and service checks. Once deployed, externally connected ECUs protected by Karamba will be hardened against the cyber threats targeting them.</p>
             </div>
         </div>
     </div>
