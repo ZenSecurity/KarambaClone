@@ -299,6 +299,7 @@ a.menu-item.footer.active {
 video.movie {
     width: 100% !important;
     height: auto !important;
+    cursor: pointer;
 }
 @media (min-width: 1200px) {
     .movie-cont {
