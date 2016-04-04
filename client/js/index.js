@@ -10,6 +10,18 @@ $(function () {
     $('.js-movie').each(function() {
         var video = this;
         if (video) {
+            var $video = $(video);
+            var posterUrl = $video.attr('poster');
+            var isAndroid = /(android)/i.test(navigator.userAgent);
+
+            // Hack: replace video with image on Android, because of FUD mostly.
+            if (isAndroid && posterUrl) {
+                $video
+                    .parent()
+                    .html('<img src="' + posterUrl + '" class="movie" alt="Poster"/>');
+                return;
+            }
+
             video.addEventListener('click', function () {
                 video[video.paused ? 'play' : 'pause']();
             }, false);
