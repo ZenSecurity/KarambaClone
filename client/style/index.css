@@ -293,21 +293,6 @@ a.menu-item.footer.active {
 /*
  Elements
 */
-.movie-cont {
-    padding: 30px;
-}
-video.movie {
-    width: 100% !important;
-    height: auto !important;
-    cursor: pointer;
-    background: #fff;
-}
-@media (min-width: 1200px) {
-    .movie-cont {
-        width: 750px;
-        float: right !important;
-    }
-}
 ul.blue li {
     color: #662d91;
 }

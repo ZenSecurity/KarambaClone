@@ -8,6 +8,23 @@
     <title>Karamba - Automotive Security Done Right</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style/index.css">
+	<style>
+.movie-cont {
+    padding: 30px;
+}
+video.movie {
+    width: 100% !important;
+    height: auto !important;
+    cursor: pointer;
+    background: #fff;
+}
+@media (min-width: 1200px) {
+    .movie-cont {
+        width: 750px;
+        float: right !important;
+    }
+}
+	</style>
 </head>
 <body>
 
@@ -82,7 +99,7 @@
             </div>
             <div class="col-sm-8 col-md-9">
                 <div class="movie-cont">
-                    <video id="introMovie" class="movie" autoplay preload="auto" poster="/video/karamba-movie-poster.jpg">
+                    <video id="introMovie" class="movie" autoplay preload="auto" poster="/video/karamba-movie-poster.gif">
                         <source src="/video/karamba-movie.webm" type="video/webm">
                         <source src="/video/karamba-movie.mp4" type="video/mp4">
                         Your browser doesn’t support HTML5 video.
