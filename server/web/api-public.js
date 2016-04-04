@@ -2,7 +2,7 @@ var jsonParser = require('body-parser').json();
 var mailer = require(appRoot + '/server/email/mailer');
 var swig = require('swig');
 
-var CONTACT_EMAIL = 'contact@karambasecurity.com';
+var CONTACT_EMAIL = 'david.barzilai@karambasecurity.com'; // Temporarily sent to Dudi until contact email is fixed
 
 function Api(app) {
     var U = {};
