@@ -50,7 +50,8 @@ $(function () {
 
         var url = "/api/send-contact";
         submitForm($contactForm, url, function (err, res) {
-            toggleSendProgress(false, 5000);
+            //toggleSendProgress(false, 5000);
+            clearFormValues();
 
             if (err) {
                 console.log('>>Err: [%s] %s', err.status, err.httpStatus);
@@ -91,6 +92,12 @@ $(function () {
         } else {
             toggle();
         }
+    }
+
+    function clearFormValues() {
+        $fields.each(function() {
+            this.value = '';
+        });
     }
 
     /*-----------------------------------------------
