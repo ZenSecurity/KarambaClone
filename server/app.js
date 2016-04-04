@@ -7,7 +7,7 @@ var auth = require('http-auth');
 
 var PORT = Number(process.env.PORT) || 8080;
 var USERNAME = 'KarambaSecurityPress';
-var PASSWORD = 'Embargo-April-7–900am-EDT';
+var PASSWORD = 'Embargo-April-7-900am-EDT';
 
 var basicAuth = auth.basic({ realm: "Karamba"}, function (username, password, callback) {
         callback(username === USERNAME && password === PASSWORD);
