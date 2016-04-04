@@ -205,7 +205,7 @@ a.menu-item.footer.active {
     padding: 0 !important;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
 }
 .hero.home {
     background-image: url('/images/hero-bg-home.jpg');
