@@ -7,18 +7,11 @@ $(function () {
     // Android disabled autoplay in all players:
     // https://bugs.chromium.org/p/chromium/issues/detail?id=159336
 
-    var PAUSE_TIME = 15.5;
     $('.js-movie').each(function() {
         var video = this;
         if (video) {
             video.addEventListener('click', function () {
                 video[video.paused ? 'play' : 'pause']();
-            }, false);
-            video.addEventListener('timeupdate', function () {
-                if (video.currentTime >= PAUSE_TIME && !$(this).data('pausedOnce')) {
-                    $(this).data('pausedOnce', true);
-                    video.pause();
-                }
             }, false);
         }
     });
