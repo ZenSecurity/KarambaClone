@@ -209,6 +209,7 @@ a.menu-item.footer.active {
 }
 .hero.home {
     background-image: url('/images/hero-bg-home.jpg');
+    background-position: right bottom;
 }
 .hero.approach {
     background-image: url('/images/hero-bg-approach.jpg');
