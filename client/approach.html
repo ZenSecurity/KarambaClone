@@ -78,20 +78,20 @@
                     Dropper Detection and Malware Prevention</h3>
 
                 <h4>A Hacker’s Way into the Car: Externally Connected ECUs</h4>
-                <p>To pull off a successful attack, hackers first need to find a way into the car’s Controller Area Network (CAN Bus). While there are over a hundred ECUs connected to the CAN Bus, only a few are open externally.</p>
-                <p>These external ECUs are the gates into the car. Detect and stop attackers at these gates, and the risk of attacks penetrating the car’s network, to disrupt its safe operations, is significantly reduced.</p>
+                <p>To pull off a successful attack, hackers first need to find a way into the car’s Controller Area Network (CAN Bus). While there are over a hundred ECUs connected to the CAN Bus, only a few have external communication interfaces.</p>
+                <p>Those ECUs are the gates into the car. Detect and stop attackers at those gates, and the risk of attacks penetrating the car’s network, to disrupt its safe operations, is significantly reduced.</p>
 
                 <h4>Karamba-generated Factory Settings Policy</h4>
                 <p>Karamba’s unique endpoint security protects externally connected ECUs from attacks. Karamba enables ECU and system providers to define factory settings for each ECU, generating a policy that creates whitelists of all ECU’s permitted program binaries, processes, scripts, network behavior, etc. This policy is embedded within the externally connected ECU to ensure only explicitly allowed code and behavior may run on it.</p>
 
                 <h4>Early Detection of Droppers</h4>
                 <h5 class="warn-color">Droppers vs. Malware</h5>
-                <p>Typically, when hackers target a system, they will use a ‘Dropper’, which is a small piece of code or operation, to try to exploit a vulnerability and implant malware. The malware is the code that ultimately tampers with or takes control of the function of the car, which can cause significant damage and put the safety of the driver and others on the road at risk.</p>
+                <p>Typically, when hackers target a system, they will use a ‘Dropper’, which is a small piece of code, to try to exploit a vulnerability and implant malware. The malware is the code that ultimately tampers with or takes control of the function of the car, which can cause significant damage and put the safety of the driver and others on the road at risk.</p>
                 <h5 class="warn-color">Early Detection</h5>
                 <p>Karamba detects the unexpected behavior or operation of a Dropper and immediately alerts on the attack attempt. The early warning gives the car’s original equipment manufacturers (OEMs) and system providers time to address the threat. Karamba’s alert includes the complete trail of the attack on the ECU, including its source and path, so vulnerabilities can be fixed and blocked to prevent any malware from infiltrating the CAN Bus.</p>
 
                 <h4>Malware Prevention</h4>
-                <p>If a Dropper introduces malware on an externally connected ECU, Karamba will detect it as foreign code and block it when it attempts to run. If it’s not part of the factory settings, it is not allowed to run; if it’s not allowed to run, it can’t do anything to disrupt the car’s safe operations.</p>
+                <p>If a malware is implanted on an externally connected ECU, via a Dropper or misconfiguration, Karamba will detect it as foreign code and block it when it attempts to run. If it’s not part of the factory settings, it is not allowed to run; if it’s not allowed to run, it can’t do anything to disrupt the car’s safe operations.</p>
 
                 <h3>Benefits:</h3>
                 <p>Karamba’s endpoint ECU security:</p>
@@ -156,7 +156,6 @@
             <!--Col-3 - Address-->
             <div class="col-md-4 footer-col col-1">
                 <p class="small">2723 South State Street<br>
-                    Suite 150<br>
                     Ann Arbor<br>
                     Michigan<br>
                     48104
