@@ -298,14 +298,19 @@ ul.blue li {
 }
 figure.founder {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     border-bottom: 1px solid #dfd8e5;;
 }
-figure.founder:last-of-type {
+figure.founder.last-in-section{
+    border-bottom-width: 3px;
+    padding-bottom: 120px;
+}
+figure.founder.last {
     border-bottom: 0;
 }
-figure.founder .img-cont {
+figure.founder .img-founder-cont {
     padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
 }
 .btn {
