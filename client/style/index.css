@@ -307,6 +307,7 @@ figure.founder.last-in-section{
 }
 figure.founder.last {
     border-bottom: 0;
+    padding-bottom: 120px;
 }
 figure.founder .img-founder-cont {
     padding-top: 20px;
