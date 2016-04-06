@@ -306,14 +306,20 @@ ul.blue li {
 }
 figure.founder {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     border-bottom: 1px solid #dfd8e5;;
 }
-figure.founder:last-of-type {
-    border-bottom: 0;
+figure.founder.last-in-section{
+    border-bottom-width: 3px;
+    padding-bottom: 120px;
 }
-figure.founder .img-cont {
+figure.founder.last {
+    border-bottom: 0;
+    padding-bottom: 120px;
+}
+figure.founder .img-founder-cont {
     padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
 }
 .btn {
