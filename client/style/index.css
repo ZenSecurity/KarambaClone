@@ -126,6 +126,9 @@ a.menu-item.footer.active {
 .color-light {
     color: #fff;
 }
+.btn {
+    transition: all .1s ease;
+}
 .btn-warn,
 .btn-warn:focus{
     color: #ec008c;
@@ -133,7 +136,9 @@ a.menu-item.footer.active {
 .btn-warn:hover,
 .btn-warn:active,
 .btn-warn.active {
-    color: #b90067;
+    color: #fff;
+    border-color: #ec008c;
+    background-color: #ec008c;
 }
 .btn-normal,
 .btn-normal:focus{
@@ -142,7 +147,9 @@ a.menu-item.footer.active {
 .btn-normal:hover,
 .btn-normal:active,
 .btn-normal.active {
-    color: #0083b9;
+    color: #fff;
+    border-color: #00aeef;
+    background-color: #00aeef;
 }
 /*
  Navbar
